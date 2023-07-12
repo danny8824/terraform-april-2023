@@ -3,5 +3,7 @@ resource "aws_key_pair" "deployer" {
   public_key = file("~/.ssh/id_rsa.pub")
   tags = {
     Team = "DevOps"
+    Env = "Dev"
+    Name = "Kaizen"
   }
 }

@@ -3,5 +3,6 @@ terraform {
     bucket = "kaizen-bucket12"
     key    = "kaizen/terraform.tfstate"
     region = "us-east-2"
+    dynamodb_table = "lock-state"
   }
 }
